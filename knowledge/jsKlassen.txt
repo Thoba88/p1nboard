@@ -1,0 +1,1 @@
+https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Klassen
