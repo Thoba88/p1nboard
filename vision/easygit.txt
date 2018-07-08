@@ -32,6 +32,6 @@ git push origin master
 
 git add file.file
 
-git commit -m "added file.file!"
+git commit -m "altered file.file!"
 
 git push origin master
