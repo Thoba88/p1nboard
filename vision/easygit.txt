@@ -7,7 +7,8 @@ git clone https://github.com/Thoba88/shuffleboard.git
 
 cd ~/shuffleboard
 
-///////////////////////
+
+//////////add file//////////
 
 touch file.file
 
@@ -18,10 +19,19 @@ git commit -m "added file.file!"
 git push origin master
 
 
-////////////////////////
+//////////remove file//////////
 
 git rm file.file
 
 git commit -m "delete file.file!"
+
+git push origin master
+
+
+//////////change file//////////
+
+git add file.file
+
+git commit -m "added file.file!"
 
 git push origin master
