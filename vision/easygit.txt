@@ -3,9 +3,9 @@ sudo apt install git
 git config --global user.name "Thomas Babinsky"
 git config --global user.email babinskythomas@live.de
 
-git clone https://github.com/Thoba88/shuffleboard.git
+git clone https://github.com/Thoba88/p1nboard.git
 
-cd ~/shuffleboard
+cd ~/p1nboard
 
 
 //////////add file//////////
