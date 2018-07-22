@@ -6,22 +6,25 @@ window.onload = function()
 	{
 		for(var i = 0; i < 5; i++)
 		{
-			createEntry();
+			pinCreate();
 		}
 	};
 
-	var postId = 1;
+	var pinId = 1;
 
-	function createEntry()
+	function pinCreate()
 	{
 		var div = document.createElement('div');
-		div.setAttribute('class', 'post');
-		div.setAttribute('id', postId);
+		div.setAttribute('class', 'pin');
+		div.setAttribute('id', pinId);
 		
+		//Random Pin Zeile
 		var row = Math.floor((Math.random() * 480) + 1);		
+		//Random Pin Spalte
 		var column = Math.floor((Math.random() * 850) + 1);
-		var row_end = row + 140;
-		var column_end = column + 190;
+		
+		var row_end = row + 140; //Pin Höhe
+		var column_end = column + 190; //Pin Breite
 
 		var grid = row + '/' + column + '/' + row_end + '/' + column_end;
 
@@ -29,13 +32,13 @@ window.onload = function()
 		
 		document.getElementById("content").appendChild(div);
 
-		document.getElementById(postId).addEventListener("click", postClick);
+		document.getElementById(pinId).addEventListener("click", pinClick);
 		
-		postId = postId + 1;
+		pinId = pinId + 1;
 	};
 
-	function postClick()
+	function pinClick()
 	{
-		console.log('post: ' + this.id + ' clicked');
+		console.log('pin: ' + this.id + ' clicked');
 	}
 }
