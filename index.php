@@ -19,6 +19,7 @@ echo "Connected successfully";
 	<script type='text/javascript' src='skript.js'></script>
 </head>
 <body>
+	<h1> p1nboard </h1>
 	<button id='Add'> Add </button>
 	<div id="content" class="frame"></div>
 </body>
